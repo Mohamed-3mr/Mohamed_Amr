@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Main Settings, apply to all the website  */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Upper thing, that contains the navigation and mohamed */
+header {
+    display: flex;
+    background-color: #f0f0f0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    padding: 0.2% 10%;
+    position: fixed;
+    display: flex;
+}
+
+/* The Logo "Mohamed" */
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 708;
+    font-size: 170%;
+}
+
+/* To center the 3 at the left */
+.navigation {
+    display: flex;
+    gap: 4%;
+    padding-left: 50%;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 163%;
+    font-weight: 520;
+    justify-content: space-between;
+}
+
+.navigation a:hover {
+    color: #601cfc
+}
+
+/* Optimizing section="main"  */
+section {
+    padding: 1% 9%;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imgs/new2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 3%;
+    color: #3a6cf4;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 3.5% 14%;
+    /* padding Was ..% 8% */
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #601cfc;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #3a6cf4;
+    font-size: 1.7em;
+    padding-right: 35px;
+    transition: 0.5s ease;
+}
+
+.social-icons a:hover {
+    color: #601cfc;
+    transform: scale(1.1);
+}
+
+/* Scroll Optimization */
+/* Scroll bar width  */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* section, */
+
+.cards {
+    padding: 3.1% 2.3%;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    cursor: default;
+}
+
+.main h2 span {
+    /* "Mohamed Amr" The Title */
+    display: inline-block;
+    margin-top: 1%;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 700;
+    cursor: default;
+}
+
+.main h3 {
+    /* "Portofolio Webiste" Under The Title */
+    color: #fff;
+    font-size: 2em;
+    font-weight: 620;
+    letter-spacing: 1px;
+    margin-top: 1%;
+    margin-bottom: 6%;
+    cursor: default;
+    /* margin-bottom, makes the button "View my work" goes down */
+}
+
+.main-btn {
+    /* "View my work" Button */
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 4% 11.2%;
+    letter-spacing: 1px;
+    border-radius: 19px;
+    margin-bottom: 6%;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0, 174, 255, 0.233);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 6.5%;
+    transition: 0.5s ease;
+}
+
+.social-icons a:hover {
+    color: #0a49f6;
+    transform: scale(1.1);
+}
+
+/* Cards Section, Services */
+
+section.cards {
+    /* The blue light effect */
+    box-shadow: 0 5px 190px rgba(15, 111, 255, 0.575);
+}
+
+.title {
+    /* Title, "Services" */
+    /* Any class called title */
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    cursor: default;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-1 {
+    background-color: #fff;
+    width: 29.33%;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.226);
+    border-radius: 10px;
+    padding: 4%;
+    margin: 2%;
+    transition: 0.9s ease;
+}
+
+.card-1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.37);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    cursor: default;
+}
+
+/* About Section, About */
+
+section.about-section {
+    background-color: #00010f;
+    /* The light effect */
+    box-shadow: 0 5px 190px rgb(38, 0, 255);
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    /* Animation-Interation => Makes an infitine loop */
+}
+
+/* Keyframe - can be applied to any code (applied to About section) */
+@keyframes change-color {
+    0% {
+        box-shadow: 0 5px 190px rgb(38, 0, 255);
+    }
+
+    50% {
+        box-shadow: 0 5px 190px rgb(0, 102, 255);
+    }
+
+    100% {
+        box-shadow: 0 5px 190px rgb(38, 0, 255);
+    }
+}
+
+.title-about {
+    /* The Title, "About"  */
+    display: flex;
+    justify-content: center;
+    color: #ffffffea;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    cursor: default;
+}
+
+p.about-text {
+    /* The text in about */
+    color: #ffffffea;
+}
+
+/* Contact Section, Contact */
+
+section.cards-contact {
+    background-color: #00010f;
+}
+
+.title-contact {
+    /* Title, "Contact" */
+    display: flex;
+    justify-content: center;
+    color: #f0f0f0;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    cursor: default;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-2 {
+    background-color: #ffffffe8;
+    width: 35%;
+    box-shadow: 0 5px 25px rgba(0, 140, 255, 0.164);
+    border-radius: 10px;
+    padding: 2%;
+    margin: 3%;
+    transition: 0.7s ease;
+}
+
+.card-2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0, 140, 255, 0.363);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* _________  */
+/* Media Query, Optimizing website for mobile devices */
+@media only screen and (max-width: 300px) {
+
+    header {
+        padding: 0% 2%;
+    }
+
+    .logo {
+        font-size: 170%;
+        font-weight: 700;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2%;
+        padding-left: 3%;
+    }
+
+    .navigation a {
+        padding-top: 2%;
+        font-weight: 520;
+        font-size: 130%;
+    }
+
+
+}
