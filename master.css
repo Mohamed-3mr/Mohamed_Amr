@@ -366,7 +366,7 @@ section.cards-contact {
 
 /* _________  */
 /* Media Query, Optimizing website for mobile devices */
-@media (min-width: 390px) and (max-width: 844px) {
+@media (min-width: 100px) and (max-width: 844px) {
 
     /* The sidebar optimizations (Mohamed + Services,Contact,About)  */
 
