@@ -382,8 +382,8 @@ section.cards-contact {
 
     .navigation {
         display: flex;
-        gap: 1.7%;
-        padding-left: 2%;
+        gap: 10%;
+        padding-left: 43%;
         flex-direction: row;
         align-items: center;
     }
@@ -412,8 +412,8 @@ section.cards-contact {
         margin: 0px;
         /* width: 100vw;
         height: 100vh; */
-        min-height: 87vh;
-        min-width: 2vw;
+        min-height: 100vh;
+        min-width: 100.2vw;
         /* min-height = makes the background goes down more  */
         display: flex;
         align-items: center;
@@ -617,12 +617,12 @@ section.cards-contact {
 
     .card-2 {
         background-color: #ffffffe8;
-        width: 60%;
+        width: 90%;
         box-shadow: 0 5px 25px rgba(0, 140, 255, 0.164);
         border-radius: 10px;
         padding-top: 1%;
         padding: 3%;
-        margin: 2%;
+        margin: 1%;
         transition: 0.7s ease;
     }
 
