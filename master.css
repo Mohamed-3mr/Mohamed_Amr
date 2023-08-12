@@ -51,8 +51,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+ul>span {
+    display: none;
+}
+
 /* a.active, */
-a:hover {
+li>a:hover {
     color: white;
     background: #601cfc;
     transition: .5s;
@@ -314,15 +318,15 @@ section.about-section {
 /* Keyframe - can be applied to any code (applied to About section) */
 @keyframes change-color {
     0% {
-        box-shadow: 0 5px 190px rgb(38, 0, 255);
+        box-shadow: 0 5px 190px rgb(15, 0, 99);
     }
 
     50% {
-        box-shadow: 0 5px 190px rgb(0, 102, 255);
+        box-shadow: 0 5px 190px rgb(0, 48, 121);
     }
 
     100% {
-        box-shadow: 0 5px 190px rgb(38, 0, 255);
+        box-shadow: 0 5px 190px rgb(16, 0, 104);
     }
 }
 
@@ -419,6 +423,10 @@ section.cards-contact {
         display: block;
     }
 
+    nav {
+        box-shadow: 0 5px 25px rgba(1, 1, 1, 0.192);
+    }
+
     ul {
         z-index: 998;
         position: fixed;
@@ -431,22 +439,40 @@ section.cards-contact {
         transition: all .5s;
     }
 
+    ul>span {
+        display: block;
+        color: #4b00fa;
+        text-transform: uppercase;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 100px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    }
+
     nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 50px;
+        background: #e2e2e2;
+        /* new background */
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 23px;
+        display: block;
+        box-shadow: 0 7px 20px rgba(1, 1, 1, 0.342);
+        border-block: 5px solid #260c63;
+        border-inline: 5px solid #260c63;
+        border-radius: .7rem;
+        max-width: 250px;
+        margin-inline: auto;
+        background-color: white;
     }
 
     /* a.active, */
     a:hover {
         background: none;
         color: #601cfc;
-        /* color: white; */
-        /* background: #601cfc; */
     }
 
     #check:checked~ul {
