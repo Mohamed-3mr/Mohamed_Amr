@@ -76,7 +76,19 @@ section {
     color: #3a6cf4;
     font-size: 3em;
     font-weight: 700;
+    animation: glow-desktop 1.5s ease-in-out infinite alternate;
 }
+
+@keyframes glow-desktop {
+    from {
+        text-shadow: 0 0 10px #ffffff00,
+    }
+
+    to {
+        text-shadow: 0 0 10px #0099ff73, 0 0 20px #0099ff73, 0 0 40px #0099ff8a;
+    }
+}
+
 
 .main h3 {
     color: #fff;
@@ -379,6 +391,7 @@ section.cards-contact {
         font-weight: 720;
         padding-top: 0.3%;
         padding-left: 2%;
+        float: left;
     }
 
     .navigation {
@@ -387,6 +400,7 @@ section.cards-contact {
         padding-left: 24%;
         flex-direction: row;
         align-items: center;
+        float: right;
     }
 
     .navigation a {
@@ -395,6 +409,7 @@ section.cards-contact {
         font-weight: 560;
         font-size: 90%;
         justify-content: flex-end;
+        float: right;
     }
 
     /* Optimizing section="main"  */
