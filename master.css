@@ -383,7 +383,7 @@ section.cards-contact {
 
     .navigation {
         display: flex;
-        gap: 8.2%;
+        gap: 10%;
         padding-left: 24%;
         flex-direction: row;
         align-items: center;
@@ -451,7 +451,7 @@ section.cards-contact {
         }
 
         to {
-            text-shadow: 0 0 20px #ffffff00, 0 0 5px #0099ff73, 0 0 10px #0099ff73, 0 0 20px #0099ff3f;
+            text-shadow: 0 0 20px #0099ff73, 0 0 30px #0099ff73, 0 0 80px #0099ff8a;
         }
     }
 
