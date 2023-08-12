@@ -412,7 +412,7 @@ section.cards-contact {
 
     label.logo {
         font-size: 30px;
-        padding-left: 50px;
+        padding-left: 10px;
     }
 
     nav ul li a {
@@ -420,7 +420,11 @@ section.cards-contact {
     }
 
     .checkbtn {
-        display: block;
+        display: flex;
+        /* padding-top: 10px; */
+        /* padding: 15px; */
+        padding: 10px 0px 10px;
+        /* display: inline-block; */
     }
 
     nav {
@@ -528,17 +532,7 @@ section.cards-contact {
         font-size: 210%;
         font-weight: 700;
         text-align: center;
-        animation: glow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-        from {
-            text-shadow: 0 0 10px #ffffff00,
-        }
-
-        to {
-            text-shadow: 0 0 20px #0099ff73, 0 0 30px #0099ff73, 0 0 80px #0099ff8a;
-        }
+        animation: none;
     }
 
     .main h3 {
@@ -753,12 +747,12 @@ section.cards-contact {
     }
 }
 
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 382px) {
 
     /* Smaller screen, To avoid the logo in nav going down */
     label.logo {
         font-size: 30px;
-        padding-left: 50px;
+        padding-left: 32px;
         margin-top: 100px;
         position: relative;
         top: -50px;
