@@ -446,7 +446,7 @@ section.cards-contact {
         font-size: 42px;
         font-weight: 800;
         line-height: 100px;
-        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+        /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15); */
     }
 
     nav ul li {
@@ -459,13 +459,16 @@ section.cards-contact {
 
     nav ul li a {
         font-size: 23px;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         box-shadow: 0 7px 20px rgba(1, 1, 1, 0.342);
-        border-block: 5px solid #260c63;
-        border-inline: 5px solid #260c63;
+        /* border-block: 5px solid #260c63; */
+        /* border-inline: 5px solid #260c63; */
         border-radius: .7rem;
         max-width: 250px;
         margin-inline: auto;
+        margin: auto;
         background-color: white;
     }
 
@@ -748,4 +751,17 @@ section.cards-contact {
     div.card-2 div.info>p {
         font-size: 0.9em;
     }
+}
+
+@media screen and (max-width: 378px) {
+
+    /* Smaller screen, To avoid the logo in nav going down */
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+        margin-top: 100px;
+        position: relative;
+        top: -50px;
+    }
+
 }
