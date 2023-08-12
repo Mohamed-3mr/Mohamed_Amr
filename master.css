@@ -7,45 +7,69 @@
     padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    list-style: none;
 }
 
 /* Upper thing, that contains the navigation and mohamed */
-header {
-    display: flex;
+
+nav {
     background-color: #f0f0f0;
+    height: 50px;
     width: 100%;
     z-index: 999;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    padding: 0.2% 10%;
     position: fixed;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.192);
 }
 
-/* The Logo "Mohamed" on the sidebar*/
-.logo {
-    text-decoration: none;
+label.logo {
     color: #3a6cf4;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: 800;
     text-transform: uppercase;
-    font-weight: 708;
-    font-size: 170%;
 }
 
-/* To center the 3 at the left */
-.navigation {
-    display: flex;
-    gap: 4%;
-    padding-left: 50%;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
 
-.navigation a {
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+nav ul li a {
     color: #3a6cf4;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 163%;
-    font-weight: 520;
-    justify-content: space-between;
 }
 
-.navigation a:hover {
-    color: #601cfc
+/* a.active, */
+a:hover {
+    color: white;
+    background: #601cfc;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #3a6cf4;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /* Optimizing section="main"  */
@@ -378,39 +402,57 @@ section.cards-contact {
 
 /* _________  */
 /* Media Query, Optimizing website for mobile devices */
-@media (min-width: 100px) and (max-width: 844px) {
+@media (max-width: 858px) {
 
     /* The sidebar optimizations (Mohamed + Services,Contact,About)  */
 
-    header {
-        padding: 0% 1%;
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
     }
 
-    .logo {
-        font-size: 130%;
-        font-weight: 720;
-        padding-top: 0.3%;
-        padding-left: 2%;
-        float: left;
+    nav ul li a {
+        font-size: 16px;
     }
 
-    .navigation {
-        display: flex;
-        gap: 10%;
-        padding-left: 24%;
-        flex-direction: row;
-        align-items: center;
-        float: right;
+    .checkbtn {
+        display: block;
     }
 
-    .navigation a {
-        display: flex;
-        padding-top: 3%;
-        font-weight: 560;
-        font-size: 90%;
-        justify-content: flex-end;
-        float: right;
+    ul {
+        z-index: 998;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #e2e2e2;
+        top: 49px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
     }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 50px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /* a.active, */
+    a:hover {
+        background: none;
+        color: #601cfc;
+        /* color: white; */
+        /* background: #601cfc; */
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
 
     /* Optimizing section="main"  */
     * {
