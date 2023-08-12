@@ -406,9 +406,9 @@ section.cards-contact {
 
 /* _________  */
 /* Media Query, Optimizing website for mobile devices */
-@media (max-width: 858px) {
+@media screen and (max-width: 858px) {
 
-    /* The sidebar optimizations (Mohamed + Services,Contact,About)  */
+    /* The sidebar optimizations (Mohamed + Services,Contact,About. )  */
 
     label.logo {
         font-size: 30px;
