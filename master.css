@@ -375,15 +375,16 @@ section.cards-contact {
     }
 
     .logo {
-        font-size: 90%;
+        font-size: 130%;
         font-weight: 720;
         padding-top: 0.3%;
+        padding-left: 2%;
     }
 
     .navigation {
         display: flex;
-        gap: 10%;
-        padding-left: 43%;
+        gap: 8.2%;
+        padding-left: 24%;
         flex-direction: row;
         align-items: center;
     }
@@ -392,7 +393,7 @@ section.cards-contact {
         display: flex;
         padding-top: 3%;
         font-weight: 560;
-        font-size: 65%;
+        font-size: 90%;
         justify-content: flex-end;
     }
 
@@ -441,6 +442,17 @@ section.cards-contact {
         font-size: 210%;
         font-weight: 700;
         text-align: center;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #ffffff00,
+        }
+
+        to {
+            text-shadow: 0 0 20px #ffffff00, 0 0 5px #0099ff73, 0 0 10px #0099ff73, 0 0 20px #0099ff3f;
+        }
     }
 
     .main h3 {
@@ -515,7 +527,7 @@ section.cards-contact {
     .card-1 {
         background-color: #fff;
         width: 90%;
-        box-shadow: 0 5px 25px rgba(1, 1, 1, 0.226);
+        box-shadow: 0 5px 40px rgba(1, 1, 1, 0.274);
         border-radius: 10px;
         padding-top: 1%;
         padding: 3%;
@@ -594,6 +606,8 @@ section.cards-contact {
 
     section.cards-contact {
         background-color: #00010f;
+        padding-top: 6%;
+        padding-bottom: 10%;
     }
 
     .title-contact {
