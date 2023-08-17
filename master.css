@@ -303,6 +303,65 @@ section.cards {
     cursor: default;
 }
 
+/* Section PROJECTS */
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 17.7em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.9em;
+    color: #000;
+}
+
+a.more-details {
+    float: right;
+    color: #3a6cf4;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 1px 10px rgba(1, 1, 1, 0.418);
+    background-color: #ffffff;
+    transition: 0.7s ease;
+}
+
+a.more-details:hover {
+    color: #601cfc;
+    transform: scale(1.07);
+}
+
 /* About Section, About */
 
 section.about-section {
