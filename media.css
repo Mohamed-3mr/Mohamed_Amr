@@ -80,6 +80,19 @@
         left: 0;
     }
 
+    .main h2 span {
+        animation: glow-desktop 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow-desktop {
+        from {
+            text-shadow: 0 0 10px #ffffff00,
+        }
+
+        to {
+            text-shadow: 0 0 10px #0099ff73, 0 0 20px #0099ff73, 0 0 40px #0099ff8a;
+        }
+    }
 
     /* Optimizing section="main"  */
     * {
@@ -350,6 +363,20 @@
     nav ul {
         margin-top: -50px;
     }
+
+    .main h2 span {
+        animation: glow-desktop 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow-desktop {
+        from {
+            text-shadow: 0 0 10px #ffffff00,
+        }
+
+        to {
+            text-shadow: 0 0 10px #0099ff73, 0 0 20px #0099ff73, 0 0 40px #0099ff8a;
+        }
+    }
 }
 
 @media screen and (max-width: 382px) {
@@ -363,4 +390,17 @@
         top: -50px;
     }
 
+    .main h2 span {
+        animation: glow-desktop 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow-desktop {
+        from {
+            text-shadow: 0 0 10px #ffffff00,
+        }
+
+        to {
+            text-shadow: 0 0 10px #0099ff73, 0 0 20px #0099ff73, 0 0 40px #0099ff8a;
+        }
+    }
 }
